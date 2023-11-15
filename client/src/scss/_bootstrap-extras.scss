@@ -1,13 +1,9 @@
-//Additional Bootstrap features we want to include
+//Additional Bootstrap features we want to include GLOBALLY
 
 // We need selected mixins for the features
 @import "bootstrap/scss/mixins/border-radius";
 @import "bootstrap/scss/mixins/box-shadow";
-@import "bootstrap/scss/mixins/transition";
-@import "bootstrap/scss/mixins/gradients";
-@import "bootstrap/scss/mixins/forms";
 @import "bootstrap/scss/mixins/image";
 
 // Now the actual features
-@import "bootstrap/scss/forms";
 @import "bootstrap/scss/images";
