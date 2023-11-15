@@ -1,7 +1,8 @@
 /* Common CSS used on every page */
 
 @import "variables";
-@import 'bootstrap';
+@import "bootstrap-grid";
+@import "bootstrap-extras";
 @import "main";
 @import "element_spacers";
 @import "editorstyles";

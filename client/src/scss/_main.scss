@@ -1,26 +1,21 @@
-// Common CSS styles for the site, which aren't critical for above-the-fold rendering
-
+//Use the font variables from the inline CSS
 
 :root {
   font-size: var(--brand-base-font-size);
 }
-
 body {
   font-family: var(--brand-body-font), serif;
 }
-
 h1, h2, h3, h4, h5 {
   font-family: var(--brand-title-font), sans-serif;
 }
-
 h1 {
   font-size: var(--brand-h1-size);
 }
-
 h2 {
   font-size: var(--brand-h2-size);
 }
-
 h3 {
   font-size: var(--brand-h3-size);
 }
+
