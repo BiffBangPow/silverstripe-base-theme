@@ -1,0 +1,20 @@
+{
+  "name": "biffbangpow/silverstripe-base-theme",
+  "description": "Base theme for Silverstripe projects",
+  "minimum-stability": "stable",
+  "type": "silverstripe-theme",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Tim Burt",
+      "email": "tim@biffbangpow.com"
+    }
+  ],
+  "require": {
+  },
+  "extra": {
+    "expose": [
+      "client/dist"
+    ]
+  }
+}

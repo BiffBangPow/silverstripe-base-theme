@@ -1,0 +1,110 @@
+//Styles used in email sending
+
+$emailBaseFontSize: 16px;
+$emailLineHeight: 1.5;
+$emailH1FontSize: 34px;
+$emailH2FontSize: 30px;
+$emailH3FontSize: 28px;
+$emailH4FontSize: 24px;
+$emailH5FontSize: 20px;
+$emailH6FontSize: 18px;
+$emailHeaderMarginBottom: 10px;
+$emailParagraphMarginBottom: 10px;
+$emailHRBorder: 1px solid #333333;
+$emailHRMargin: 20px;
+$emailImgMargin: 20px;
+$emailTextColour: #333333;
+$emailFontFamily: Helvetica, Arial, sans-serif;
+$emailMaxWidth: 600px;
+$emailBodyBackgroundColour: #ffffff;
+$emailListPadding: 2px;
+
+body {
+
+  background-color: $emailBodyBackgroundColour;
+  font-family: $emailFontFamily;
+  color: $emailTextColour;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: $emailMaxWidth;
+  line-height: $emailLineHeight;
+  font-size: $emailBaseFontSize;
+
+}
+
+h1,h2,h3,h4,h5,h6,p,ol,ul {
+
+  margin-top: 0;
+
+}
+
+h1 {
+
+  font-size: $emailH1FontSize;
+
+}
+
+h2 {
+
+  font-size: $emailH2FontSize;
+
+}
+
+h3 {
+
+  font-size: $emailH3FontSize;
+
+}
+
+h4 {
+
+  font-size: $emailH4FontSize;
+
+}
+
+h5 {
+
+  font-size: $emailH5FontSize;
+
+}
+
+h6 {
+
+  font-size: $emailH6FontSize;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  margin-bottom: $emailHeaderMarginBottom;
+
+}
+
+p {
+
+  margin-bottom: $emailParagraphMarginBottom;
+
+}
+
+hr {
+
+  border-top: $emailHRBorder;
+  margin-top: $emailHRMargin;
+  margin-bottom: $emailHRMargin;
+
+}
+
+ul, ol {
+
+  padding-left: $emailListPadding;
+
+}
+
+img {
+
+  max-width: 100%;
+  margin-top: $emailImgMargin;
+  margin-bottom: $emailImgMargin;
+
+}

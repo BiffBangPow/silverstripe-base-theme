@@ -1,0 +1,38 @@
+{
+  "name": "base-theme",
+  "version": "1.0.0",
+  "description": "Base theme for Silverstripe projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BiffBangPow/silverstripe-base-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BiffBangPow/silverstripe-base-theme/issues"
+  },
+  "homepage": "https://github.com/BiffBangPow/silverstripe-base-theme#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "autoprefixer": "^10.4.16",
+    "babel-preset-minify": "^0.5.2",
+    "bootstrap": "^5.3.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-mode": "^1.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

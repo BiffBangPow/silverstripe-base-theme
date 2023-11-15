@@ -1,0 +1,34 @@
+
+.element {
+  &.bbp-padtop {
+    padding-top: $element-padding;
+  }
+
+  &.bbp-padright {
+    padding-right: $element-padding;
+  }
+
+  &.bbp-padbottom {
+    padding-bottom: $element-padding;
+  }
+
+  &.bbp-padleft {
+    padding-left: $element-padding;
+  }
+
+  &.bbp-margintop {
+    margin-top: $element-margin;
+  }
+
+  &.bbp-marginright {
+    margin-right: $element-margin;
+  }
+
+  &.bbp-marginbottom {
+    margin-bottom: $element-margin;
+  }
+
+  &.bbp-marginleft {
+    margin-left: $element-margin;
+  }
+}

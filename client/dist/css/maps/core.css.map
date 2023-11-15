@@ -1,0 +1,1 @@
+{"version":3,"sources":["core.scss"],"names":[],"mappings":"AAAA,sEAAA;AACA,gFAAA;AACA,0DAAA","file":"../../../src/scss/core.css","sourcesContent":["/* Core / critical CSS only - especially for above the fold elements */\n/* loaded on every page (except the home page) for rendering priority elements */\n/* Keep it as small as possible because it gets inlined! */\n\n\n\n"]}
