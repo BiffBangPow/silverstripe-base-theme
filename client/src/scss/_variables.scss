@@ -12,21 +12,52 @@ $spacers: (
         9: 10rem
 );
 
+//Common Colours
+$white: #ffffff;
+$black: #000000;
+
 // Margin and padding for the elements (enabled on a per-element basis in the CMS)
 $element-padding: 2rem !default;
 $element-margin: 2rem !default;
-
 
 //Set up a few Bootstrap things
 $enable-dark-mode: false;
 $enable-important-utilities: false;
 $enable-gradients: false;
+$enable-negative-margins: false;
+$headings-font-family: var(--brand-titlefamilyname);
+$font-family-base: var(--brand-bodyfamilyname);
+$h1-font-size: var(--brand-h1size);
+$h2-font-size: var(--brand-h2size);
+$h3-font-size: var(--brand-h3size);
+$h4-font-size: var(--brand-h4size);
+$h5-font-size: var(--brand-h5size);
+$h6-font-size: var(--brand-h6size);
+$body-bg: $white;
 
-$colors: (
-        "black": #000000,
-        "white": #ffffff
+
+//Nav options
+$hamburger-types: (
+  spin
 );
-$theme-colors: (
-        "black": #000000,
-        "white": #ffffff
-);
+$hamburger-layer-color: var(--brand-burgercolour);
+$hamburger-active-layer-color: var(--brand-burgercolour);
+$hamburger-layer-width: 15px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-padding-x: 8px;
+$hamburger-padding-y: 8px;
+
+$navigation-level1-size: 1.25rem;
+$navigation-level2-size: 1.15rem;
+
+
+
+//Set up the CSS variables we need
+:root {
+  --bs-heading-color: var(--brand-brandcolour);
+  --bs-body-color: var(--brand-bodycolour);
+  --bs-body-font-size: var(--brand-basesize);
+  --bs-body-font-family: var(--brand-bodyfamilyname);
+  --bs-body-bg: var(--brand-bodybackground);
+}

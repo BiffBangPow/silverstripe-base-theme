@@ -1,0 +1,52 @@
+//Nav styles to be included in the common file
+
+#mainnav-holder {
+  transition: all 0.5s ease;
+
+  &.active {
+    min-width: 25%;
+    background: white;
+    height: 100%;
+    max-width: 500px;
+    right: 0;
+  }
+}
+
+#mainnav-list, #mainnav-list ul {
+  list-style: none;
+}
+
+#mainnav-list {
+  a {
+    text-decoration: none;
+  }
+  .nav-item {
+    color: var(--brand-brandcolour);
+    font-size: $navigation-level1-size;
+  }
+  .child-nav-item {
+    color: var(--brand-bodycolour);
+    font-size: $navigation-level2-size;
+  }
+
+  .nav-expander {
+    transition: all 0.5s ease;
+    padding: 0;
+
+    &.active {
+      transform: rotate(90deg);
+    }
+  }
+
+  ul {
+    &.child-nav {
+      transition: all 0.5s ease;
+      overflow: hidden;
+      max-height: 0;
+
+      &.active {
+        max-height: 300px;
+      }
+    }
+  }
+}

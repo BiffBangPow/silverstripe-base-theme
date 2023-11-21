@@ -1,0 +1,26 @@
+.bbp-video-hero .hero-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bbp-video-hero video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+.bbp-video-hero .content-holder {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  max-width: 800px;
+}
+.bbp-video-hero .content {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+/*# sourceMappingURL=../../../dist/css/maps/elements/videohero.css.map */

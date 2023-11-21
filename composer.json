@@ -11,6 +11,7 @@
     }
   ],
   "require": {
+      "biffbangpow/silverstripe-base-theme-functions": "*"
   },
   "extra": {
     "expose": [

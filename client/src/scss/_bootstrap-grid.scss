@@ -5,10 +5,8 @@ $include-column-box-sizing: true !default;
 
 @import "build_essentials";
 
-@import "bootstrap/scss/mixins/breakpoints";
-@import "bootstrap/scss/mixins/container";
-@import "bootstrap/scss/mixins/grid";
-@import "bootstrap/scss/mixins/utilities";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/reboot";
 
 @import "bootstrap/scss/vendor/rfs";
 
@@ -53,6 +51,8 @@ $utilities: map-get-multiple(
                                 "padding-end",
                                 "padding-bottom",
                                 "padding-start",
+                                "position",
+                                "text-align",
                         )
 );
 

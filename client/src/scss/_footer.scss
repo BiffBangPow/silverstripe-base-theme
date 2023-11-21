@@ -1,0 +1,36 @@
+
+footer {
+  background: var(--brand-brandlightcolour);
+}
+
+.footer-nav {
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer-social {
+  a {
+    border: solid 2px;
+    width: var(--brand-socialiconsize);
+    height: 40px;
+    border-radius: 50%;
+    border-color: var(--brand-brandcolour);
+
+    svg {
+      height: calc(var(--brand-socialiconsize) * .6);
+      fill: var(--brand-brandcolour);
+    }
+  }
+}
+
+.copyright-text, .credit-text {
+  font-size: 0.9em;
+}
+
+
+@include media-breakpoint-up('md') {
+  .copyright-text {
+    border-right: solid 1px;
+  }
+}

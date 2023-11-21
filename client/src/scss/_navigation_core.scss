@@ -1,0 +1,72 @@
+//Styles specific to the nav - these are included in the core CSS.. don't get carried away!
+//This file only contains styles for the initial above-the-fold render.   Nav styles which are not
+//immediately visible are in the navigation_common file
+
+@import "hamburgers/_sass/hamburgers/hamburgers";
+
+#main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--brand-navbarbackground);
+  transition: all 0.4s ease;
+  padding: 0.25rem 1rem;
+  z-index: 1000;
+
+  &.scrolled {
+    background: var(--brand-navbarbackgroundscrolled);
+  }
+}
+
+#mainnav-holder {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  z-index: 1050;
+}
+
+#site-logo {
+  margin: 1rem;
+}
+
+#navtoggler {
+  background-color: var(--brand-brandcolour);
+  border-radius: 50%;
+  border-color: var(--brand-burgercolour);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0;
+  height: $hamburger-layer-width * 2.5;
+  width: $hamburger-layer-width * 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-bun {
+  position: relative;
+  z-index: 1100;
+}
+
+#skipnav {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus, &:focus-visible {
+    width: auto;
+    z-index: 2000;
+    height: auto;
+    display: inline-block;
+    color: var(--brand-bodycolour);
+    background: var(--bs-body-bg);
+    padding: 0.5rem;
+    left: 0;
+  }
+}
