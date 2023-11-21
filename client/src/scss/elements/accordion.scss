@@ -1,0 +1,35 @@
+@import "../variables";
+
+.bbp-accordion-element {
+  details {
+    border-color: var(--brand-bodycolour);
+    border-bottom: solid 1px;
+
+    summary {
+      color: var(--brand-brandcolour);
+      font-size: $h3-font-size;
+      font-family: var(--brand-titlefamilyname);
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &::before {
+        content: "+";
+        font-size: 1.4em;
+        width: 3rem;
+      }
+    }
+
+    &[open] {
+      summary {
+        &::before {
+          content: "−";
+        }
+      }
+    }
+  }
+}
