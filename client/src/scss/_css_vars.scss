@@ -1,0 +1,10 @@
+//Set up the CSS variables we need
+:root {
+  --bs-heading-color: var(--brand-brandcolour);
+  --bs-body-color: var(--brand-bodycolour);
+  --bs-body-font-size: var(--brand-basesize);
+  --bs-body-font-family: var(--brand-bodyfamilyname);
+  --bs-body-bg: var(--brand-bodybackground);
+  --bs-border-color: var(--brand-bodycolour);
+  --bs-border-width: 1px;
+}

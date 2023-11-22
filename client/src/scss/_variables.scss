@@ -53,12 +53,7 @@ $navigation-level1-size: 1.25rem;
 $navigation-level2-size: 1.15rem;
 
 
+//Element-specific options
+$pagination-button-size: 1rem;
+$testimonials-prevnext-size: 35px;
 
-//Set up the CSS variables we need
-:root {
-  --bs-heading-color: var(--brand-brandcolour);
-  --bs-body-color: var(--brand-bodycolour);
-  --bs-body-font-size: var(--brand-basesize);
-  --bs-body-font-family: var(--brand-bodyfamilyname);
-  --bs-body-bg: var(--brand-bodybackground);
-}

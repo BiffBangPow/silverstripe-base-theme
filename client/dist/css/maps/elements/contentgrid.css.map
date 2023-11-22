@@ -1,0 +1,1 @@
+{"version":3,"sources":["elements/contentgrid.scss","elements/contentgrid.css"],"names":[],"mappings":"AAEI;EACE,kBAAA;ACDN","file":"../../../../src/scss/elements/contentgrid.css","sourcesContent":[".bbp-contentgrid-element {\n  h3 {\n    &.griditem-title {\n      text-align: center;\n    }\n  }\n}\n",".bbp-contentgrid-element h3.griditem-title {\n  text-align: center;\n}"]}

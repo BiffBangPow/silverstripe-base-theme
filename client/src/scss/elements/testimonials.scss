@@ -1,0 +1,78 @@
+@import "../variables";
+@import "@glidejs/glide/src/assets/sass/glide.core";
+
+.bbp-testimonials-element {
+
+  .glide__bullets {
+    text-align: center;
+  }
+
+  .glide__bullet {
+    border: solid 1px var(--brand-brandcolour);
+    width: $pagination-button-size;
+    height: $pagination-button-size;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 0.15rem;
+
+    &.glide__bullet--active {
+      background: var(--brand-brandcolour);
+    }
+  }
+
+  footer {
+    background: var(--brand-bodybackground);
+  }
+
+  .testimonial-image {
+    border-radius: 50%;
+    max-width: 100px;
+  }
+
+  cite {
+    font-style: normal;
+
+    span {
+      display: block;
+
+      &.attribution-name {
+        color: var(--brand-brandcolour);
+      }
+    }
+  }
+
+  .testimonial {
+    padding: 0 90px;
+    text-align: center;
+  }
+
+  .bbp-testimonials-element {
+    position: relative;
+  }
+
+  .glide__arrows {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 500;
+
+    button {
+      color: var(--brand-brandcolour);
+      border: solid 1px;
+      background: var(--brand-bodybackground);
+      display: flex;
+      padding: 0.4rem;
+
+      svg {
+        width: $testimonials-prevnext-size;
+        height: $testimonials-prevnext-size;
+        fill: var(--brand-brandcolour);
+      }
+    }
+  }
+
+}

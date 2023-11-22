@@ -1,0 +1,7 @@
+.bbp-text-and-image-element h2.element-title {
+  text-align: left;
+}
+.bbp-text-and-image-element h2.element-title:after {
+  margin: 1rem 0 0.75rem 0;
+}
+/*# sourceMappingURL=../../../dist/css/maps/elements/textandimage.css.map */

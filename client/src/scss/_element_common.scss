@@ -1,0 +1,13 @@
+h2 {
+  &.element-title {
+    text-align: center;
+
+    &:after {
+      display: block;
+      content: "";
+      border-bottom: solid 1px;
+      max-width: 110px;
+      margin: 1rem auto 0.75rem auto;
+    }
+  }
+}

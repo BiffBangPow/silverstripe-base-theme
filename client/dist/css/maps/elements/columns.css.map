@@ -1,0 +1,1 @@
+{"version":3,"sources":["elements/columns.scss","elements/columns.css"],"names":[],"mappings":"AAEI;EACE,kBAAA;ACDN","file":"../../../../src/scss/elements/columns.css","sourcesContent":[".bbp-columns-element {\n  h3 {\n    &.column-title {\n      text-align: center;\n    }\n  }\n}\n",".bbp-columns-element h3.column-title {\n  text-align: center;\n}"]}

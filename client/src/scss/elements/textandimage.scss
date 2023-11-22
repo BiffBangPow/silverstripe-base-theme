@@ -1,0 +1,13 @@
+@import "../variables";
+
+.bbp-text-and-image-element {
+  h2 {
+    &.element-title {
+      text-align: left;
+
+      &:after {
+        margin: 1rem 0 0.75rem 0;
+      }
+    }
+  }
+}

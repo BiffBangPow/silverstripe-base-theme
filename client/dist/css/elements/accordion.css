@@ -1,12 +1,4 @@
 @charset "UTF-8";
-:root {
-  --bs-heading-color: var(--brand-brandcolour);
-  --bs-body-color: var(--brand-bodycolour);
-  --bs-body-font-size: var(--brand-basesize);
-  --bs-body-font-family: var(--brand-bodyfamilyname);
-  --bs-body-bg: var(--brand-bodybackground);
-}
-
 .bbp-accordion-element details {
   border-color: var(--brand-bodycolour);
   border-bottom: solid 1px;

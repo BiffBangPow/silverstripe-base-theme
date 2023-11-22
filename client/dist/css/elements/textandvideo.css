@@ -1,0 +1,46 @@
+.bbp-text-and-video-element {
+  /* right-facing triangle "Play" icon */
+}
+.bbp-text-and-video-element iframe {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.bbp-text-and-video-element .text {
+  max-width: 51rem;
+  margin: 0 auto;
+}
+.bbp-text-and-video-element .textvideo-text {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.bbp-text-and-video-element .ratio {
+  height: 100%;
+}
+.bbp-text-and-video-element .lite-youtube-fallback {
+  aspect-ratio: 16/9; /* matches YouTube player */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.bbp-text-and-video-element .lite-youtube-fallback::before {
+  display: block;
+  content: "";
+  border: solid transparent;
+  border-width: 2em 0 2em 3em;
+  border-left-color: red;
+}
+.bbp-text-and-video-element .lite-youtube-fallback:hover::before {
+  border-left-color: #fff;
+}
+.bbp-text-and-video-element .lite-youtube-fallback:focus {
+  outline: 2px solid red;
+}
+/*# sourceMappingURL=../../../dist/css/maps/elements/textandvideo.css.map */

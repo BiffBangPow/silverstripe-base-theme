@@ -1,14 +1,6 @@
 /* Core / critical CSS only - especially for above the fold elements */
 /* loaded on every page (except the home page) for rendering priority elements */
 /* Keep it as small as possible because it gets inlined! */
-:root {
-  --bs-heading-color: var(--brand-brandcolour);
-  --bs-body-color: var(--brand-bodycolour);
-  --bs-body-font-size: var(--brand-basesize);
-  --bs-body-font-family: var(--brand-bodyfamilyname);
-  --bs-body-bg: var(--brand-bodybackground);
-}
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

@@ -1,0 +1,25 @@
+@import "../variables";
+
+.bbp-stats-element {
+
+  .stat-value {
+    color: var(--brand-brandcolour);
+    font-weight: 700;
+  }
+
+  span {
+    &.countup {
+      font-size: 5rem;
+    }
+    &.units {
+      font-size: 4rem;
+    }
+  }
+
+  div {
+    &.cta {
+      text-align: center;
+    }
+  }
+
+}

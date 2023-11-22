@@ -5,7 +5,66 @@
 @import "bootstrap/scss/mixins/box-shadow";
 @import "bootstrap/scss/mixins/transition";
 @import "bootstrap/scss/mixins/gradients";
+@import "bootstrap/scss/mixins/breakpoints";
 @import "bootstrap/scss/vendor/rfs";
 @import "bootstrap/scss/mixins/forms";
 
 @import "bootstrap/scss/forms";
+
+.bbp-contact-form-element {
+  input {
+    &[type=text], &[type=email], &[type=password] {
+      border: solid 1px var(--brand-brandcolour);
+    }
+  }
+  textarea {
+    border: solid 1px var(--brand-brandcolour);
+  }
+
+  @include media-breakpoint-up('lg') {
+
+    form {
+      fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+      }
+    }
+
+    #Form_ContactForm_Name_Holder, #Form_ContactForm_Email_Holder, #Form_ContactForm_Phone_Holder {
+      grid-column: 1;
+    }
+
+    #Form_ContactForm_Name_Holder {
+      grid-row: 1;
+    }
+
+    #Form_ContactForm_Email_Holder {
+      grid-row: 2;
+    }
+
+    #Form_ContactForm_Phone_Holder {
+      grid-row: 3;
+    }
+
+    #Form_ContactForm_Enquiry_Holder {
+      grid-row: 1 / 4;
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        flex-grow: 1;
+      }
+    }
+
+
+
+  }
+
+}
+
+
+

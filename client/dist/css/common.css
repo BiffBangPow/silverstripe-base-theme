@@ -1,12 +1,4 @@
 /* Common CSS used on every page */
-:root {
-  --bs-heading-color: var(--brand-brandcolour);
-  --bs-body-color: var(--brand-bodycolour);
-  --bs-body-font-size: var(--brand-basesize);
-  --bs-body-font-family: var(--brand-bodyfamilyname);
-  --bs-body-bg: var(--brand-bodybackground);
-}
-
 /*!
  * Bootstrap Grid v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -6331,6 +6323,16 @@ progress {
   --bs-btn-border-radius: var(--bs-border-radius-sm);
 }
 
+:root {
+  --bs-heading-color: var(--brand-brandcolour);
+  --bs-body-color: var(--brand-bodycolour);
+  --bs-body-font-size: var(--brand-basesize);
+  --bs-body-font-family: var(--brand-bodyfamilyname);
+  --bs-body-bg: var(--brand-bodybackground);
+  --bs-border-color: var(--brand-bodycolour);
+  --bs-border-width: 1px;
+}
+
 #mainnav-holder {
   transition: all 0.5s ease;
 }
@@ -6373,6 +6375,42 @@ progress {
   max-height: 300px;
 }
 
+.element.bbp-padtop {
+  padding-top: 2rem;
+}
+.element.bbp-padright {
+  padding-right: 2rem;
+}
+.element.bbp-padbottom {
+  padding-bottom: 2rem;
+}
+.element.bbp-padleft {
+  padding-left: 2rem;
+}
+.element.bbp-margintop {
+  margin-top: 2rem;
+}
+.element.bbp-marginright {
+  margin-right: 2rem;
+}
+.element.bbp-marginbottom {
+  margin-bottom: 2rem;
+}
+.element.bbp-marginleft {
+  margin-left: 2rem;
+}
+
+h2.element-title {
+  text-align: center;
+}
+h2.element-title:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px;
+  max-width: 110px;
+  margin: 1rem auto 0.75rem auto;
+}
+
 .brand-icon {
   filter: url(#colorize-brand);
 }
@@ -6406,31 +6444,6 @@ footer {
     border-right: solid 1px;
   }
 }
-.element.bbp-padtop {
-  padding-top: 2rem;
-}
-.element.bbp-padright {
-  padding-right: 2rem;
-}
-.element.bbp-padbottom {
-  padding-bottom: 2rem;
-}
-.element.bbp-padleft {
-  padding-left: 2rem;
-}
-.element.bbp-margintop {
-  margin-top: 2rem;
-}
-.element.bbp-marginright {
-  margin-right: 2rem;
-}
-.element.bbp-marginbottom {
-  margin-bottom: 2rem;
-}
-.element.bbp-marginleft {
-  margin-left: 2rem;
-}
-
 p.text-left {
   text-align: left;
 }
