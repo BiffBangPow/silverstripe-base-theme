@@ -1,0 +1,43 @@
+@import "../variables";
+
+.bbp-team-element {
+
+  p {
+    &.team-member-name {
+      font-size: $h3-font-size;
+      font-family: var(--brand-titlefamilyname);
+      color: var(--brand-brandcolour);
+      margin-bottom: 0;
+    }
+
+    &.team-member-title {
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .team-icon {
+    text-decoration: none;
+    border: solid 2px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border-color: var(--brand-brandcolour);
+
+    svg {
+      height: calc(2rem * .6);
+      fill: var(--brand-brandcolour);
+    }
+  }
+
+}

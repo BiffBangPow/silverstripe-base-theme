@@ -1,0 +1,33 @@
+.bbp-team-element p.team-member-name {
+  font-size: var(--brand-h3size);
+  font-family: var(--brand-titlefamilyname);
+  color: var(--brand-brandcolour);
+  margin-bottom: 0;
+}
+.bbp-team-element p.team-member-title {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.bbp-team-element .visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.bbp-team-element .team-icon {
+  text-decoration: none;
+  border: solid 2px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border-color: var(--brand-brandcolour);
+}
+.bbp-team-element .team-icon svg {
+  height: 1.2rem;
+  fill: var(--brand-brandcolour);
+}
+/*# sourceMappingURL=../../../dist/css/maps/elements/team.css.map */
