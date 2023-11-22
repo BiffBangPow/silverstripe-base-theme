@@ -1,13 +1,1 @@
-.bbp-cta .cta-image {
-  border: solid 1px var(--brand-brandcolour);
-}
-.bbp-cta .cta-title {
-  color: var(--brand-brandcolour);
-  font-size: var(--brand-h3size);
-  text-align: center;
-  font-family: var(--brand-titlefamilyname);
-}
-.bbp-cta p.cta-holder {
-  text-align: center;
-}
-/*# sourceMappingURL=../../../dist/css/maps/elements/calltoaction.css.map */
+.bbp-cta .cta-image{border:solid 1px var(--brand-brandcolour)}.bbp-cta .cta-title{color:var(--brand-brandcolour);font-size:var(--brand-h3size);text-align:center;font-family:var(--brand-titlefamilyname)}.bbp-cta p.cta-holder{text-align:center}

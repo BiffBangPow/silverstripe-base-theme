@@ -1,14 +1,1 @@
-.bbp-stats-element .stat-value {
-  color: var(--brand-brandcolour);
-  font-weight: 700;
-}
-.bbp-stats-element span.countup {
-  font-size: 5rem;
-}
-.bbp-stats-element span.units {
-  font-size: 4rem;
-}
-.bbp-stats-element div.cta {
-  text-align: center;
-}
-/*# sourceMappingURL=../../../dist/css/maps/elements/stats.css.map */
+.bbp-stats-element .stat-value{color:var(--brand-brandcolour);font-weight:700}.bbp-stats-element span.countup{font-size:5rem}.bbp-stats-element span.units{font-size:4rem}.bbp-stats-element div.cta{text-align:center}

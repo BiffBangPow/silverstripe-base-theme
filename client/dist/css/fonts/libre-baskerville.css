@@ -1,17 +1,1 @@
-/* libre-baskerville-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Libre Baskerville";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/libre-baskerville-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* libre-baskerville-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Libre Baskerville";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/libre-baskerville-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/*# sourceMappingURL=../../../dist/css/maps/fonts/libre-baskerville.css.map */
+@font-face{font-display:swap;font-family:"Libre Baskerville";font-style:normal;font-weight:400;src:url(../../fonts/libre-baskerville-v14-latin-regular.woff2) format("woff2")}@font-face{font-display:swap;font-family:"Libre Baskerville";font-style:normal;font-weight:700;src:url(../../fonts/libre-baskerville-v14-latin-700.woff2) format("woff2")}
