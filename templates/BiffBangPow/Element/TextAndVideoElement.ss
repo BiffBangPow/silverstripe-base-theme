@@ -1,10 +1,9 @@
 <div class="container">
-    <div class="row g-0">
-        <div class="textvideo-text col-12 col-lg flex-lg-grow<% if $VideoFirst %> order-last<% end_if %> text-start text-md-center d-flex flex-column justify-content-center">
+    <div class="row">
+        <div class="textvideo-text col-12 col-lg flex-lg-grow<% if $VideoFirst %> order-last<% end_if %> d-flex flex-column justify-content-center">
             <div class="text p-3<% if $VideoFirst %> order-last<% end_if %>">
                 <% if $ShowTitle %>
                     <h2 class="mb-2 element-title">$Title</h2>
-                   <span class="underline mb-3"></span>
                 <% end_if %>
                 <div>$Content</div>
                 <% if $CTAType != 'None' %>

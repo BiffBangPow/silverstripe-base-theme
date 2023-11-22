@@ -7,16 +7,14 @@
      object-fit: cover;
   height: 100%;
 }
-.bbp-text-and-video-element .text {
-  max-width: 51rem;
-  margin: 0 auto;
-}
-.bbp-text-and-video-element .textvideo-text {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
 .bbp-text-and-video-element .ratio {
   height: 100%;
+}
+.bbp-text-and-video-element h2.element-title {
+  text-align: left;
+}
+.bbp-text-and-video-element h2.element-title:after {
+  margin: 1rem 0;
 }
 .bbp-text-and-video-element .lite-youtube-fallback {
   aspect-ratio: 16/9; /* matches YouTube player */

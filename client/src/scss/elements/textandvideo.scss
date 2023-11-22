@@ -8,18 +8,18 @@
     height: 100%;
   }
 
-  .text {
-    max-width: 51rem;
-    margin: 0 auto;
-  }
-
-  .textvideo-text {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .ratio {
     height: 100%;
+  }
+
+  h2 {
+    &.element-title {
+      text-align: left;
+
+      &:after {
+        margin: 1rem 0;
+      }
+    }
   }
 
   .lite-youtube-fallback {
