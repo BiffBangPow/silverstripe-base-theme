@@ -11,13 +11,6 @@ const scrollTriggerElem = document.getElementById('scrollbeacon');
 const mainNavHolder = document.getElementById('mainnav-holder');
 
 
-function main() {
-    const observer = new IntersectionObserver(handleNavToggle);
-    observer.observe(scrollTriggerElem);
-    initNavToggler();
-    initNavCollapse();
-}
-
 function handleNavToggle(entries, observer) {
     entries.forEach(entry => {
         if (entry.target.id === "scrollbeacon") {
@@ -50,19 +43,30 @@ function initNavToggler() {
 function initNavCollapse() {
     const expanders = mainNavHolder.querySelectorAll(':scope button.nav-expander');
     expanders.forEach((expander) => {
-       expander.addEventListener('click', () => {
-           let targetNavID = expander.getAttribute('aria-controls');
-           let targetNav = document.getElementById(targetNavID);
-           if (targetNav) {
-               targetNav.classList.toggle('active');
-               expander.classList.toggle('active');
-               if (targetNav.classList.contains('active')) {
-                   targetNav.setAttribute('aria-expanded', true);
-               }
-               else {
-                   targetNav.setAttribute('aria-expanded', false);
-               }
-           }
-       });
+        expander.addEventListener('click', () => {
+            let targetNavID = expander.getAttribute('aria-controls');
+            let targetNav = document.getElementById(targetNavID);
+            if (targetNav) {
+                targetNav.classList.toggle('active');
+                expander.classList.toggle('active');
+                if (targetNav.classList.contains('active')) {
+                    targetNav.setAttribute('aria-expanded', true);
+                }
+                else {
+                    targetNav.setAttribute('aria-expanded', false);
+                }
+            }
+        });
     });
 }
+
+
+
+function main() {
+    const observer = new IntersectionObserver(handleNavToggle);
+    observer.observe(scrollTriggerElem);
+    initNavToggler();
+    initNavCollapse();
+}
+
+
