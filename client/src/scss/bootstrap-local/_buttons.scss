@@ -2,56 +2,26 @@
 
 
 .btn {
-  // scss-docs-start btn-css-vars
-  --#{$prefix}btn-padding-x: #{$btn-padding-x};
-  --#{$prefix}btn-padding-y: #{$btn-padding-y};
-  --#{$prefix}btn-font-family: #{$btn-font-family};
   @include rfs($btn-font-size, --#{$prefix}btn-font-size);
-  --#{$prefix}btn-font-weight: #{$btn-font-weight};
-  --#{$prefix}btn-line-height: #{$btn-line-height};
-  --#{$prefix}btn-color: #{$btn-color};
-  --#{$prefix}btn-bg: transparent;
-  --#{$prefix}btn-border-width: #{$btn-border-width};
-  --#{$prefix}btn-border-color: transparent;
-  --#{$prefix}btn-border-radius: #{$btn-border-radius};
-  --#{$prefix}btn-hover-border-color: transparent;
-  --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
-  --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
-  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
-  // scss-docs-end btn-css-vars
 
-  display: inline-block;
-  padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x);
-  font-family: var(--#{$prefix}btn-font-family);
-  @include font-size(var(--#{$prefix}btn-font-size));
-  font-weight: var(--#{$prefix}btn-font-weight);
-  line-height: var(--#{$prefix}btn-line-height);
-  color: var(--#{$prefix}btn-color);
+  display: inline-flex;
+  padding: $btn-padding-y $btn-padding-x;
+  font-family: $btn-font-family;
+  @include font-size($btn-font-size);
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $btn-color;
   text-align: center;
   text-decoration: if($link-decoration == none, null, none);
   white-space: $btn-white-space;
   vertical-align: middle;
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
-  border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
-  @include border-radius(var(--#{$prefix}btn-border-radius));
-  @include gradient-bg(var(--#{$prefix}btn-bg));
-  @include box-shadow(var(--#{$prefix}btn-box-shadow));
+  border: $btn-border-width solid var(--brand-bodybackground);
+  @include border-radius($btn-border-radius);
+  @include box-shadow($btn-box-shadow);
   @include transition($btn-transition);
 
-  &:hover {
-    color: var(--#{$prefix}btn-hover-color);
-    text-decoration: if($link-hover-decoration == underline, none, null);
-    background-color: var(--#{$prefix}btn-hover-bg);
-    border-color: var(--#{$prefix}btn-hover-border-color);
-  }
-
-  .btn-check + &:hover {
-    // override for the checkbox/radio buttons
-    color: var(--#{$prefix}btn-color);
-    background-color: var(--#{$prefix}btn-bg);
-    border-color: var(--#{$prefix}btn-border-color);
-  }
 
   &:focus-visible {
     color: var(--#{$prefix}btn-hover-color);
@@ -66,38 +36,6 @@
     }
   }
 
-  .btn-check:focus-visible + & {
-    border-color: var(--#{$prefix}btn-hover-border-color);
-    outline: 0;
-    // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: var(--#{$prefix}btn-box-shadow), var(--#{$prefix}btn-focus-box-shadow);
-    } @else {
-      box-shadow: var(--#{$prefix}btn-focus-box-shadow);
-    }
-  }
-
-  .btn-check:checked + &,
-  :not(.btn-check) + &:active,
-  &:first-child:active,
-  &.active,
-  &.show {
-    color: var(--#{$prefix}btn-active-color);
-    background-color: var(--#{$prefix}btn-active-bg);
-    // Remove CSS gradients if they're enabled
-    background-image: if($enable-gradients, none, null);
-    border-color: var(--#{$prefix}btn-active-border-color);
-    @include box-shadow(var(--#{$prefix}btn-active-shadow));
-
-    &:focus-visible {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows {
-        box-shadow: var(--#{$prefix}btn-active-shadow), var(--#{$prefix}btn-focus-box-shadow);
-      } @else {
-        box-shadow: var(--#{$prefix}btn-focus-box-shadow);
-      }
-    }
-  }
 
   &:disabled,
   &.disabled,
@@ -110,21 +48,35 @@
     opacity: var(--#{$prefix}btn-disabled-opacity);
     @include box-shadow(none);
   }
+
+  &:after {
+    content: '';
+    mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"%3E%3Cstyle%3Esvg%7Bfill:%23000000%7D%3C/style%3E%3Cpath d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/%3E%3C/svg%3E');
+    mask-size: cover;
+    background-color: $btn-color;
+    width: 1rem;
+    height: 1rem;
+    display: inline-flex;
+    align-self: center;
+    margin-left: 1rem;
+  }
 }
 
+//background, border, hover, colour, hover colour
+
 .btn-primary {
-  @include button-variant(var(--brand-brandcolour), var(--brand-brandcolour), var(--brand-brandlightcolour), var(--brand-bodycolour));
+  @include button-variant(var(--brand-brandcolour), var(--brand-brandcolour), var(--brand-brandcolouralt), var(--brand-bodybackground), var(--brand-bodybackground));
 }
 
 
 .btn-secondary {
-  @include button-variant(var(--brand-brandlightcolour), var(--brand-brandlightcolour), var(--brand-brandcolour), var(--brand-bodycolour));
+  @include button-variant(var(--brand-brandlightcolour), var(--brand-brandlightcolour), var(--brand-brandcolour), var(--brand-bodycolour), var(--brand-bodycolour));
 }
 
 .btn-outline-primary {
-  @include button-outline-variant(var(--brand-brandcolour));
+  @include button-variant(var(--brand-bodybackground), var(--brand-brandcolour), var(--brand-brandcolour), var(--brand-brandcolour), var(--brand-bodybackground));
 }
 
 .btn-outline-secondary {
-  @include button-outline-variant(var(--brand-brandlightcolour));
+  //@include button-variant(var(--brand-brandlightcolour));
 }

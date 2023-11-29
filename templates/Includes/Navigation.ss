@@ -17,19 +17,19 @@
         </button>
     </div>
 
-    <nav id="mainnav-holder" class="px-3 pt-9 pb-4" aria-expanded="false">
+    <nav id="mainnav-holder" class="px-5 pt-9 pb-4" aria-expanded="false">
         <ul class="p-0" id="mainnav-list">
             <% loop $MainMenu %>
-                <li class="nav-item $URLSegment<% if $MenuChildren %> has-children<% end_if %> py-2">
+                <li class="nav-item $URLSegment<% if $MenuChildren %> has-children<% end_if %> py-3">
                     <% if $MenuChildren %>
-                        <button class="nav-expander d-inline-block btn btn-lg" aria-controls="subnav-$ID"
+                        <button class="nav-expander d-inline-block btn-lg" aria-controls="subnav-$ID"
                                 aria-label="Expand child menu">&#9658;
                         </button><% end_if %>
                     <a class="nav-link <% if $isCurrent || $isSection %>active<% end_if %>" href="$Link">$Title</a>
                     <% if $MenuChildren %>
                         <ul class="child-nav p-0" id="subnav-$ID" aria-expanded="false">
                             <% loop $MenuChildren %>
-                                <li class="child-nav-item $URLSegment">
+                                <li class="child-nav-item $URLSegment py-1">
                                     <a class="nav-link <% if $isCurrent || $isSection %>active<% end_if %>"
                                        href="$Link">$Title</a>
                                 </li>

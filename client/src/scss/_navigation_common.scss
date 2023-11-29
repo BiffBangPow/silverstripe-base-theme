@@ -4,7 +4,7 @@
   transition: all 0.5s ease;
 
   &.active {
-    min-width: 25%;
+    min-width: max(360px, 30vw);
     background: white;
     height: 100%;
     max-width: 500px;
@@ -23,6 +23,12 @@
   .nav-item {
     color: var(--brand-brandcolour);
     font-size: $navigation-level1-size;
+    border-bottom: solid 1px;
+    position: relative;
+
+    a {
+      margin-left: 2rem;
+    }
   }
   .child-nav-item {
     color: var(--brand-bodycolour);
@@ -32,6 +38,15 @@
   .nav-expander {
     transition: all 0.5s ease;
     padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 2rem;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    color: var(--brand-brandcolour);
 
     &.active {
       transform: rotate(90deg);
@@ -46,6 +61,7 @@
 
       &.active {
         max-height: 300px;
+        padding: 0.5rem 0;
       }
     }
   }
