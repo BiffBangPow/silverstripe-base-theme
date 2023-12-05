@@ -1,0 +1,94 @@
+@import "../variables";
+@import "../build_essentials";
+@import "bootstrap/scss/mixins/breakpoints";
+
+.job-card {
+  border: solid 1px var(--brand-brandcolour);
+  width: calc(50% - 2rem);
+
+  .job-bullets {
+    min-height: 60px;
+  }
+
+  p {
+    strong {
+      color: var(--brand-brandcolour);
+    }
+
+    &.bullet {
+      margin: 0;
+      font-size: 0.9em;
+      position: relative;
+      padding-left: 1.5rem;
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 0.1rem;
+
+        path {
+          fill: var(--brand-brandcolour);
+        }
+      }
+    }
+  }
+}
+
+.job-listings {
+  flex-wrap: wrap;
+}
+
+.search-filters {
+  input, select {
+    width: 100%;
+    border: solid 1px var(--brand-brandcolour);
+    padding: 0.25rem;
+    background: var(--brand-bodybackground);
+  }
+  label, .jb-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .jb-checkbox-wrapper {
+    display: flex;
+
+    input {
+      &.form-check-input {
+        width: auto;
+        margin-right: 1rem;
+      }
+    }
+
+    label {
+      font-weight: 400;
+    }
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.pagination {
+  a {
+    text-decoration: none;
+
+    &.current {
+      font-weight: 700;
+    }
+  }
+}
+
+@include media-breakpoint-up('lg') {
+  .job-card {
+    width: calc(33% - 2rem);
+  }
+}
+
+@include media-breakpoint-up('xl') {
+  .job-card {
+    width: calc(25% - 2rem);
+  }
+}
