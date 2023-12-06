@@ -1,13 +1,13 @@
 <div class="container mt-5">
     <h1>$jobtitle</h1>
-    <p>Location: {$location}</p>
-    <p>Work Type: {$jobtype}</p>
-    <p>Job Ref: {$jobref}</p>
+    <p class="mb-1"><span class="fw-bold">Location:</span> {$location}</p>
+    <p class="mb-1"><span class="fw-bold">Work Type:</span> {$jobtype}</p>
+    <p class="mb-1"><span class="fw-bold">Job Ref:</span> {$jobref}</p>
     <% if $bullets %>
         $bullets
     <% end_if %>
 
-    <button data-micromodal-trigger="modal-$ID" class="btn btn-primary">Apply now</button>
+    <button data-micromodal-trigger="modal-$ID" class="btn btn-primary mt-3">Apply now</button>
 
     <div class="my-4">
         {$detail}
