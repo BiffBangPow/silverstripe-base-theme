@@ -1,15 +1,8 @@
 /* Common JS for all pages.  Run at the end of the page, so could be deferred!  (hence the extra tests on domready) */
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', main);
-} else {
-    main();
-}
-
 const navBar = document.getElementById('main-navbar');
 const scrollTriggerElem = document.getElementById('scrollbeacon');
 const mainNavHolder = document.getElementById('mainnav-holder');
-
 
 function handleNavToggle(entries, observer) {
     entries.forEach(entry => {
@@ -60,8 +53,6 @@ function initNavCollapse() {
     });
 }
 
-
-
 function main() {
     const observer = new IntersectionObserver(handleNavToggle);
     observer.observe(scrollTriggerElem);
@@ -70,3 +61,8 @@ function main() {
 }
 
 
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', main);
+} else {
+    main();
+}
