@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container job-view-page">
     <h1>$jobtitle</h1>
     <p class="mb-1"><span class="fw-bold">Location:</span> {$location}</p>
     <p class="mb-1"><span class="fw-bold">Work Type:</span> {$jobtype}</p>

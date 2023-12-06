@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container job-listings-page">
     <div>
         <h1>$Title.XML</h1>
     </div>
