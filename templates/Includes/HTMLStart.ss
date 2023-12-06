@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10"/>
     $MetaTags
     $FaviconMarkup
+    $PageMetaTags
 </head>
 <body class="$ClassName.ShortName $URLSegment">
 <a href="#maincontent" id="skipnav">Skip to main content</a>
