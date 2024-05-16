@@ -13,7 +13,7 @@
 <% end_if %>
 
 <% if $SiteConfig.SocialX %>
-    <a href="$SiteConfig.X" rel="nofollow noopener" target="_blank"
+    <a href="$SiteConfig.SocialX" rel="nofollow noopener" target="_blank"
        class="d-inline-flex justify-content-center align-items-center mx-1"
        title="<%t Template.FooterXLinkTitle 'Link to our X feed'%>">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" aria-labelledby="footerlogo-x">
