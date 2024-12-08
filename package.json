@@ -38,6 +38,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@justinribeiro/lite-youtube": "^1.5.0"
+    "@justinribeiro/lite-youtube": "^1.6.0"
   }
 }
