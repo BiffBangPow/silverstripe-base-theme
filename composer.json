@@ -16,7 +16,8 @@
     "extra": {
         "expose": [
             "client/dist",
-            "node_modules/@justinribeiro/lite-youtube"
+            "node_modules/@justinribeiro/lite-youtube",
+            "node_modules/@glidejs/glide"
         ]
     }
 }
